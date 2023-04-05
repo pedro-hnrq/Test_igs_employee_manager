@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block 'title' %} Employee List{% endblock%}
+{% block 'head' %} {% endblock %}
+
+{% block 'body' %}
+    <div class="wrapper">
+    
+    <table lass="tabela" cellpadding="20">
+        <h1 class="titulo">Employee List</h1><br>
+        
+        <tr class="tabela-linha tabela-logo">
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Address</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {% for collaborator in collaborators %}
+        <tr>
+            <td>{{ collaborator.name }}</td>
+            <td>{{ collaborator.email }}</td>
+            <td>{{ collaborator.department }}</td>
+            <td>{{ collaborator.address }}</td>
+            <td><a href="{% url 'edit_employee' collaborator.id %}" class="btn btn-info">Edit</a></td>
+            <td><a href="{% url 'delete_employee' collaborator.id %}" class="btn btn-danger">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'add_employee' %}" class="btn btn-primary">Add Employee</a>
+    
+</div>
+
+
+{% endblock %}

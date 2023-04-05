@@ -6,6 +6,8 @@
 
 <h2 align='center'> Preview </h2>
 
+![test_IGs](https://user-images.githubusercontent.com/74242717/230141908-d38a1f48-397e-40d3-9543-71eef4237a85.gif)
+
 
 <h2 align='center'> Run Python Project and Django REST Framework</h2>
 

@@ -73,3 +73,7 @@ curl -H "Accept: application/json" http://127.0.0.1:8000/employee/2/
 - All employees: http://127.0.0.1:8000/employee/
 - Employee by ID: http://127.0.0.1:8000/employee/2/
 
+<p align="justify"> You can List, add, edit and delete employees:</p>
+
+- http://127.0.0.1:8000/employee/list
+
